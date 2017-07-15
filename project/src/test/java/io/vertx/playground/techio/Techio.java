@@ -13,12 +13,11 @@ public class Techio {
 
     public static void open(int port, String path) {
         System.out.println(PROMPT + "open --port " + port + " " + path);
-
     }
 
     public static void await(long i) {
         try {
-            Thread.sleep(30 * 1000);
+            Thread.sleep(i * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
