@@ -3,10 +3,7 @@ package io.vertx.playground;
 import io.vertx.core.Vertx;
 import io.vertx.playground.techio.StreamRecorder;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.PrintStream;
-import java.util.Scanner;
 
 public class TestUtils {
 

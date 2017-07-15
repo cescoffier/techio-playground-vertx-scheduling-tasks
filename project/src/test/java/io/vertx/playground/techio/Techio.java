@@ -16,4 +16,11 @@ public class Techio {
 
     }
 
+    public static void await(long i) {
+        try {
+            Thread.sleep(30 * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

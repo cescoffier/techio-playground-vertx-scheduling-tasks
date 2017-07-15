@@ -2,9 +2,6 @@ package io.vertx.playground;
 
 import io.vertx.core.Vertx;
 
-/**
- * @author <a href="http://escoffier.me">Clement Escoffier</a>
- */
 public class CancellationExample {
 
     private static int counter = 0;

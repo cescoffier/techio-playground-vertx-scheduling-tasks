@@ -4,6 +4,7 @@ import io.vertx.playground.techio.StreamRecorder;
 import io.vertx.playground.techio.Techio;
 import org.junit.Test;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import static org.awaitility.Awaitility.await;
@@ -25,8 +26,10 @@ public class TimerExampleTest {
         });
 
         TimerExample.main();
-        await().untilAtomic(found, is(true));
+        await().atMost(30, TimeUnit.SECONDS).untilAtomic(found, is(true));
         Techio.success(true);
+
+        Techio.await(30);
     }
 
 }
