@@ -7,7 +7,7 @@ public class TimerExample {
     public static void main(String... args) {
         Vertx vertx = Vertx.vertx();
 
-        vertx.setTimer(10000, l -> {
+        vertx.setTimer(5000, l -> {
            System.out.println("Hello");
         });
     }

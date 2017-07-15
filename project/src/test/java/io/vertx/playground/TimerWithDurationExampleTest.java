@@ -27,10 +27,10 @@ public class TimerWithDurationExampleTest {
         });
 
         TimerWithDurationExample.main();
-        await().atMost(30, TimeUnit.SECONDS).untilAtomic(found, is(true));
+        await().untilAtomic(found, is(true));
         Techio.success(true);
 
-        Techio.await(30);
+        Techio.await(10);
     }
 
 }

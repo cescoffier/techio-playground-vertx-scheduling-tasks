@@ -12,6 +12,6 @@ public class CancellationExampleTest {
     public void test() {
         CancellationExample.main();
         Techio.success(true);
-        Techio.await(30);
+        Techio.await(10);
     }
 }

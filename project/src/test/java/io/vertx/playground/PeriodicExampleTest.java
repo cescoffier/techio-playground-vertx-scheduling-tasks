@@ -13,6 +13,6 @@ public class PeriodicExampleTest {
         PeriodicExample.main();
         Techio.success(true);
 
-        Techio.await(30);
+        Techio.await(10);
     }
 }
